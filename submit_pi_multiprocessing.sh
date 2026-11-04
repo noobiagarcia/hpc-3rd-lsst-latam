@@ -6,6 +6,6 @@
 #SBATCH -J pi-multiprocessing
 #SBATCH --output=/path/to/%u/lsst_latam/logs/%x-%j.out
 
-EXEC="/path/to/pi_multiprocessing.py"
+EXEC="/path/to/code/pi_multiprocessing.py"
 
 srun python "$EXEC"
