@@ -31,11 +31,11 @@ nb.cells = [
 
         "print(B)\n\n"
 
-        "resultado = A @ B\n"
+        "value = A @ B\n"
 
         "print('\\nA x B:')\n"
 
-        "print(resultado)"
+        "print(value)"
 
     )
 ]
