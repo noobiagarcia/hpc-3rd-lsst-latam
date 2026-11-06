@@ -11,4 +11,4 @@ conda activate "$ENV"
 
 EXEC="/path/to/my_notebook.py"
 
-srun python "EXEC"
+srun python "$EXEC"
