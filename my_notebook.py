@@ -1,15 +1,17 @@
 import nbformat
+import numpy
+import astropy
 
-# Cria um notebook Jupyter simples
+
 nb = nbformat.v4.new_notebook()
 
 nb.cells = [
 
     nbformat.v4.new_markdown_cell(
 
-        "# Multiplicação de matrizes\n"
+        "# Matrix Multiplication \n"
 
-        "Exemplo simples gerado por um job Slurm."
+        "Simple example."
 
     ),
 
@@ -21,17 +23,17 @@ nb.cells = [
 
         "B = np.array([[5, 6], [7, 8]])\n\n"
 
-        "print('Matriz A:')\n"
+        "print('Matrix A:')\n"
 
         "print(A)\n\n"
 
-        "print('\\nMatriz B:')\n"
+        "print('\\nMatrix B:')\n"
 
         "print(B)\n\n"
 
         "resultado = A @ B\n"
 
-        "print('\\nResultado de A x B:')\n"
+        "print('\\nA x B:')\n"
 
         "print(resultado)"
 
@@ -54,10 +56,10 @@ nb.metadata = {
 
 
 
-with open("multiplicacao_matrizes.ipynb", "w", encoding="utf-8") as arquivo:
+with open("matrix_multiplication.ipynb", "w", encoding="utf-8") as arquivo:
 
     nbformat.write(nb, arquivo)
 
 
 
-print("Notebook criado: multiplicacao_matrizes.ipynb")
+print("Notebook created: matrix_multiplication.ipynb")
